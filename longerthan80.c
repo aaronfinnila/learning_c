@@ -17,8 +17,7 @@ int main() {
     while ((len = getline(line, MAXLINE)) > 0) {
         if (len > min) {
             copy(longer, line, index1);
-            index1 = index1 + len;
-            printf("%d len value", len);
+            index1 += len;
         }
     }
 
@@ -31,7 +30,7 @@ int main() {
 }
 
 int getline(char s[], int lim) {
-    int c, i;
+    int c, i = 0;
 
     for (i; i < lim-1 && (c=getchar()) != EOF && c != '\n'; ++i) {
         s[i] = c;
