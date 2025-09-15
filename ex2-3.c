@@ -6,7 +6,7 @@ int htoi(char hexadigits[]);
 
 int main() {
 
-    char array[] = "FFfF";
+    char array[] = "0";
     int result = htoi(array);
     printf("%d", result);
     return 0;
